@@ -8,3 +8,4 @@
 2021-11-28 14:10:20,906:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
 2021-11-28 14:10:33,888:server.get_all_tickets:Successfully logged 100 Tickets.
 2021-11-28 15:44:49,559:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 15:49:37,422:server.get_all_tickets:Successfully logged 100 Tickets.
