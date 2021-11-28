@@ -8,10 +8,20 @@ A web based application that is written using the Flask framework. The app makes
 - Python 3 or higher.
 
 ## Screen Shots
-- Landing Page :
+- Landing Page:
+
 ![Home_Page](images/Home_Page.png)
+
 ![Home_Page](images/Home_Page_2.png)
--
+
+- Single Ticket Info page:
+
+![Single_Ticket](images/Single_ticket.png)
+
+- Error Page: (If there is an error with the API request) 
+
+![Error_Page](images/Error_Page.png)
+
 ## Live server
 
 - When you run app.py
