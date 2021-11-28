@@ -66,7 +66,7 @@ $ python3  test_tickets.py
 
 ![All_Ticket_Log](images/All_Ticket_Log.png)
 
-![Single_Ticket_Log](images/Single_Ticket_Log.png)
+![Single_Ticket_Log](images/Sinlge_Ticket_Log.png)
 
 
 ## Architectural Design Overview
