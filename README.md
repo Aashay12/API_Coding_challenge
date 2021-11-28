@@ -55,6 +55,7 @@ $ python3 app.py
 
 2. Run the tests with the following code
 ```
+$ cd server/
 $ python3  test_tickets.py
 ```
 
