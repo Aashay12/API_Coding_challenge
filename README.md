@@ -8,9 +8,10 @@ A web based application that is written using the Flask framework. The app makes
 - Python 3 or higher.
 
 ## Screen Shots
-
+- Landing Page :
 ![Home_Page](images/Home_Page.png)
-
+![Home_Page](images/Home_Page_2.png)
+-
 ## Live server
 
 - When you run app.py
