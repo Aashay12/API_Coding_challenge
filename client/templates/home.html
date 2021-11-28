@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+<!-- Header template starts here -->
+{% block header %}
+{% endblock %}
+
+<!-- Body template starts here -->
+{% block body %}
+<div>
+    <!-- Error Handling -->
+    {% if error %}
+    <div class="row mp-5">
+        <div class="col-md-8 mx-auto">
+            <div class="card text-white bg-dark mb-3" style="max-width: 50rem;">
+                <div class="card-header">Something went wrong</div>
+                <div class="card-body">
+                    <h5 class="card-title">Error: </h5>
+                    <p class="card-text">{{error['error']}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="container mb-3 mt-3">
+        <table id="ticketTable" class="table table-striped table-bordered mydatatable" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Ticket Id</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Subject</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for t_id,priority,status,subject,date in subjects %}
+                <tr>
+                    <td>{{t_id}}</td>
+                    <td>{{priority}}</td>
+                    <td>{{status}}</td>
+                    <td><a href="/ticket/{{t_id}}">{{subject}}</a></td>
+                    <td>{{date}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+    <br>
+</div>
+{% endblock %}
+
+
+<!-- Script template starts here-->
+{% block script %}
+{% endblock %}
