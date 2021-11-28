@@ -8,15 +8,15 @@ A web based application that is written using the Flask framework. The app makes
 - Python 3 or higher.
 
 ## Screen Shots
-- Landing Page:
+- Landing Page: (Displays 25 tickets per page)
 
 ![Home_Page](images/Home_Page.png)
 
 ![Home_Page](images/Home_Page_2.png)
 
-- Single Ticket Info page:
+- Single Ticket Info page: (Specific details about each ticket)
 
-![Single_Ticket](images/Single_ticket.png)
+![Single_Ticket](images/Single_Ticket.png)
 
 - Error Page: (If there is an error with the API request) 
 
@@ -32,7 +32,7 @@ A web based application that is written using the Flask framework. The app makes
 1. Download the repository to your local machine with the following code.
 
 ```
-$ git clone https://github.com/Aashay12/Zendesk-Coding-Challenge.git
+$ git clone https://github.com/Aashay12/Zendesk_coding_challenge.git
 ```
 
 2. Navigate to the application folder using the terminal.
@@ -57,6 +57,17 @@ $ python3 app.py
 ```
 $ python3  test_tickets.py
 ```
+
+### Logging
+
+- Used Python's Logger to handle diffferent logging levels.
+
+- The All_tickets.log and Single_Ticket.log reports data about what the API returns and in case of any error it logs it in the file
+
+![All_Ticket_Log](images/All_Ticket_Log.png)
+
+![Single_Ticket_Log](images/Single_Ticket_Log.png)
+
 
 ## Architectural Design Overview
 
