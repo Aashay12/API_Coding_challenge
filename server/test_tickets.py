@@ -61,7 +61,7 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response[0][0], mock_get.return_value.json.return_value)
 
 #Check the entire get_single_ticket function
-#Test 4: Check the API response and json data for single ticket
+#Test 4: Check the entire get_single_ticket function works when passed null data
     def test_oneticket_api(self):
         mock_response = [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
 
@@ -72,5 +72,36 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response[2], mock_get.return_value.status_code)
         self.assertEqual(response[0], mock_get.return_value.json.return_value)
  
+#Test 5: Check the whether the process_all_ticket function when passed empty Json
+    def test_all_ticket(self):
+        mock_object = [{}]
+        expected_ticket_result = [[0, "None", "None", "None", "None"]]
+        result = process_ticket_data(mock_object)
+        self.assertEqual(expected_ticket_result, result)
+
+#Test 6: Check the whether the process_single_ticket function works when passed empty Json
+
+    def test_single_ticket_1(self):
+        mock_object = [{}]
+        expected_ticket_result = [[0, "None", "None", "None", "None"]]
+        result = process_ticket_data(mock_object)
+        self.assertEqual(expected_ticket_result, result)
+
+
+#Test 6: Check if ticket does not exist get_single_ticket function works shows the error
+    def test_oneticket_api_error(self):
+        mock_response = "RecordNotFound"
+
+        with patch("get_single_ticket.requests.get") as mock_get:
+            mock_get.return_value.status_code = 200
+            mock_get.return_value.json.return_value = mock_response
+        response = get_single_ticket(111)       #Ticket number does not exists
+        self.assertNotEqual(response[2], mock_get.return_value.status_code)
+        self.assertEqual(response[1]["error"], mock_get.return_value.json.return_value)
+
+
+
+
+
 if __name__ == '__main__':
     unittest.main()

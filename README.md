@@ -22,6 +22,10 @@ A web based application that is written using the Flask framework. The app makes
 
 ![Error_Page](images/Error_Page.png)
 
+- Ticket not found error: (If the ticket id is not present in the json response)
+
+![Ticket_Error](images/Ticket_Not_Found.png)
+
 ## Live server
 
 - When you run app.py

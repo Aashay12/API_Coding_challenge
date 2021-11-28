@@ -32,7 +32,10 @@ def get_all_tickets():
         logger.error(error_message)
     else:
         all_ticket = json.loads(all_tickets_data.text)
-        processed_tickets = process_ticket_data(all_ticket["tickets"])
+        if not all_ticket:
+            return [0, "None", "None", "None", "None"]
+        else:
+            processed_tickets = process_ticket_data(all_ticket["tickets"])
     return processed_tickets, error, all_tickets_data.status_code
 
 
@@ -40,7 +43,7 @@ def get_all_tickets():
 def process_ticket_data(ticket_list):
     ticket_subjects = []
     for fields in ticket_list:
-        ticket_subjects.append([fields['id'], fields["priority"],
-                                    fields["status"], fields["subject"], fields["created_at"][0:10]])
+        ticket_subjects.append([fields['id'] if "id" in fields else 0, fields["priority"] if "priority" in fields else 'None',
+                                    fields["status"] if "status" in fields else 'None', fields["subject"] if "subject" in fields else "None", fields["created_at"][0:10] if "created_at" in fields else "None"])
     logger.info("Successfully logged {} Tickets.".format(len(ticket_subjects)))
     return ticket_subjects

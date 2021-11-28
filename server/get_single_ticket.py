@@ -18,6 +18,7 @@ logger.addHandler(file_handler)
 # Function to return data within a single ticket
 def get_single_ticket(ticket_id):
     error = ''
+    processed_single_ticket_data = []
 
     # Requesting Api to return data for a single ticket
     url = '{}{}'.format(os.getenv("GETSINGLETICKETURL"),ticket_id)
@@ -31,12 +32,15 @@ def get_single_ticket(ticket_id):
         logger.error(error_message)
     else:
         single_ticket = json.loads(ticket_data.text)
-        processed_single_ticket_data = process_single_ticket(single_ticket["ticket"])
+        if not single_ticket:
+            return [0, "None", "None", "None"]
+        else:
+            processed_single_ticket_data = process_single_ticket(single_ticket["ticket"])
     return processed_single_ticket_data, error, ticket_data.status_code
 
 #Storing id, created_at, subject, description and tags.
 def process_single_ticket(single_ticket_data):
-    single_ticket_detail = [single_ticket_data['id'], single_ticket_data["created_at"][0:10],
-                                single_ticket_data["subject"], single_ticket_data["description"]]
+    single_ticket_detail = [single_ticket_data['id'] if single_ticket_data['id'] else 0, single_ticket_data["created_at"][0:10] if single_ticket_data["created_at"] else "None",
+                                single_ticket_data["subject"] if single_ticket_data["subject"] else "None", single_ticket_data["description"] if single_ticket_data["description"] else "None"]
     logger.info("Tickets logged successfully:  {}".format(single_ticket_detail))
     return single_ticket_detail

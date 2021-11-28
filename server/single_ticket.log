@@ -1,2 +1,40 @@
-2021-11-27 23:04:08,461:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
-2021-11-27 23:04:08,462:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:46:04,953:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:46:04,954:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:47:20,124:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:47:20,128:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:49:09,116:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:49:09,120:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:49:29,556:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:49:29,559:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:50:49,160:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:50:49,161:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:51:35,949:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:51:36,321:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:51:36,322:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:52:01,556:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:52:02,080:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:52:02,081:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:53:24,812:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:53:25,285:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:53:25,285:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:53:46,520:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:53:46,933:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:53:46,933:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:54:14,883:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:54:15,388:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:54:15,388:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 13:54:56,127:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 13:54:56,556:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 13:54:56,557:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 14:01:27,009:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 14:01:27,619:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 14:01:27,619:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 14:06:30,371:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 14:06:30,874:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 14:06:30,875:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 14:06:44,501:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 14:06:45,012:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 14:06:45,012:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
+2021-11-28 14:07:20,444:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-28 14:07:20,956:get_single_ticket:Error: RecordNotFound Status_code: 404
+2021-11-28 14:07:20,957:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']
