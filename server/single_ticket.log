@@ -1,0 +1,2 @@
+2021-11-27 23:04:08,461:get_single_ticket:Tickets logged successfully:  [1, '2021-11-21', 'Sample ticket: Meet the ticket', 'Hi there,\n\nI’m sending an email because I’m having a problem setting up your new product. Can you help me troubleshoot?\n\nThanks,\n The Customer\n\n']
+2021-11-27 23:04:08,462:get_single_ticket:Tickets logged successfully:  ['1', '2021-11-21', 'Hi, How are you doing?', 'My name is John. I am having issue with my printer']

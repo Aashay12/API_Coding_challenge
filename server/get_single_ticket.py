@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 # Logging errors 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

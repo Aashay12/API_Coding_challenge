@@ -1,7 +1,5 @@
-import json
 import unittest
 from unittest.mock import patch
-import requests
 from get_all_tickets import process_ticket_data, get_all_tickets
 from get_single_ticket import process_single_ticket, get_single_ticket
 

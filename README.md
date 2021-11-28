@@ -62,12 +62,11 @@ $ python3  test_tickets.py
 
 - Used Python's Logger to handle diffferent logging levels.
 
-- The All_tickets.log and Single_Ticket.log reports data about what the API returns and in case of any error it logs it in the file
+- The All_tickets.log and Single_Ticket.log reports data about what the API returns and in case of any error it logs it in the file.
 
 ![All_Ticket_Log](images/All_Ticket_Log.png)
 
 ![Single_Ticket_Log](images/Sinlge_Ticket_Log.png)
-
 
 ## Architectural Design Overview
 
@@ -94,7 +93,6 @@ $ python3  test_tickets.py
 
 Data handling is easy python
 UI rendering is easy because Jinja
-
 
 
 Originally I had used a get request with Basic authentication as my primary method of sending credentials to the API, but after reading further into the Zendesk developer docs, I came to realise that hardcoding the admin username and password into a client application is far too insecure.
@@ -129,7 +127,7 @@ The following section contains links to resources I found super useful while bui
 
   - [Basic Authentication](https://developer.zendesk.com/rest_api/docs/support/introduction#basic-authentication)
 
-- Tips and best practices that helped make my code more clean organised.
+- Tips and best practices that helped me in writing code for error logging.
 
   - [Error Logging](https://www.loggly.com/use-cases/6-python-logging-best-practices-you-should-be-aware-of/)
 
