@@ -104,7 +104,7 @@ $ python3  test_tickets.py
 ### Design Choices
 
 - Originally, I thought of using Node.js and React as my base frameworks to make API calls and frontend rendering. 
-  But being more comfortable with python, I felt it would be easy for me to build the application.
+  But being more comfortable with python, I felt it would be easy for me to build the application in a short period of time.
 
 - Node's scalability is easier to achieve due to its asynchronous structure, but Python works better for complex data-intensive projects.
 
@@ -124,9 +124,10 @@ $ python3  test_tickets.py
 
 ### Display All Tickets
   - Pagingation - 
-  Initially I considered to handle the pagination at the backend. But for the particular test case, I eventually decided to go with my current approach beacuse it had the following benefits:
+  Initially I considered to handle the pagination at the backend. But for this particular use case, I eventually decided to go with my current approach beacuse it had the following benefits:
     
-  1. User do not need to make API calls everytime they jump to another page which resulted in increasing the traffic on the server side.    Reducing the numebr of API calls and providing all the ticket at once helped me reduce the response time.
+  1. User do not need to make API calls everytime they jump to another page which might have resulted in increasing the traffic on the server side. Reducing the numebr of API calls and providing all the ticket at once helped me reduce the response time.
+  
   2. Using the DataTable template for pagination made my code more readable.
 
   However, if the number of tickets on the server grew exponentially large, then I might have considered handling the pagination on the backend because it might have helped to reduce the bandwidth.
