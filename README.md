@@ -24,7 +24,7 @@ A web based application that is written using the Flask framework. The app makes
 
 - Ticket not found error: (If the ticket id is not present on the user's accout)
 
-![Ticket_Error](images/Ticket_Not_Found.png)
+![Ticket_Error](images/Ticket_not_found.png)
 
 ## Live server
 
