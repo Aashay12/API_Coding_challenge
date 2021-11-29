@@ -124,15 +124,15 @@ $ python3  test_tickets.py
 
   - Reasons why I used Jinja2:
     1. It is a fast, expressive, extensible templating engine.
-    2. Easy to read and implement and eliminates a lot of redundant code.
+    2. Easy to read, implement and eliminates a lot of redundant code.
 
 ### Display All Tickets
   - Pagingation - 
   Initially I considered to handle the pagination at the backend. But for this particular use case, I eventually decided to go with my current approach beacuse it had the following benefits:
     
-  1. User do not need to make API calls everytime they jump to another page which might have resulted in increasing the traffic on the server side. Reducing the numebr of API calls and providing all the ticket at once helped me reduce the response time.
+    1. User do not need to make API calls everytime they jump to another page which might have resulted in increasing the traffic on the server side. Reducing the numebr of API calls and providing all the ticket at once helped me reduce the response time.
   
-  2. Using the DataTable template for pagination made my code more readable.
+    2. Using the DataTable template for pagination made my code more readable.
 
   However, if the number of tickets on the server grew exponentially large, then I might have considered handling the pagination on the backend because it might have helped to reduce the bandwidth.
 
