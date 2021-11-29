@@ -110,6 +110,7 @@ $ python3  test_tickets.py
   - High scalability for simple applications,
   - Easy to build a quick prototype.
   - Routing URL is easy.
+  - Supports Jinja2 which makes rendering UI easy.
 
 #### Connecting and requesting tickets from the zendesk API
 
