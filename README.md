@@ -73,19 +73,18 @@ $ python3  test_tickets.py
 
 ![Single_Ticket_Log](images/Sinlge_Ticket_Logs.png)
 
-## Architectural Design Overview
 
 ### Assumptions
 
 - Users are familar with running a python program.
 - Tickets requests and Error responses to the Zendesk API will always return JSON with the same structure.
 
-### Main Component Description
+### Component Description
 
 - `app.py` : Program entry point, handles all the routes and passes data between different pages.
 - `get_all_tickets.py` : Contains code for making http requests for receiving list of all tickets from the Zendesk Api.
 - `get_single_ticket.py` : Contains code for making http requests for receiving data about a single ticket from the Zendesk Api.
-- `main.html` : Web-page to display list of all tickets in a tabular format.
+- `home.html` : Web-page to display list of all tickets in a tabular format.
 - `ticket.html` : Web-page to display data about a single ticket.
 - `base.html` : Jinja template to hold the static html and js content.
 - `all_tickets.log` : Log file that stores and reports any errors faced by the user while requesting list of tickets.
@@ -94,33 +93,33 @@ $ python3  test_tickets.py
 
 ### Design Choices
 
+- Originally, I thought of using Node.js and React as my base frameworks to make API calls and frontend rendering. 
+  But being more comfortable with python, I felt it would be easy for me to build the application.
+  
+- Node's scalability is easier to achieve due to its asynchronous structure, but Python works better for complex data-intensive projects.
+
 #### Connecting and requesting tickets from the zendesk API
 
-Data handling is easy python
-UI rendering is easy because Jinja
+  - Authorization - Made API requests to Zendesk using the personal access token and OAuth Token provided by them. Username and password are not hardcoded in plain text, which would have left them vulnerable to being compomised.
 
+### Frontend
+   - Used HTML, CSS and JavaScript to desgin a simple frontend view. Used Datatable template to dislay all the tickets in a table along with pagination.
 
-Originally I had used a get request with Basic authentication as my primary method of sending credentials to the API, but after reading further into the Zendesk developer docs, I came to realise that hardcoding the admin username and password into a client application is far too insecure.
+### Data templating
+   - Used Jinja2 to retrieve the data from Flask framework. 
 
-The application now uses OAuth 2.0 as the primary method of communicating credentials, using the `Bearer Token` syntax, within the request Authorization header. The token resides in the .env file and is read into the node process object on the attribute `TOKEN` in config.js. The benefit of having used OAuth 2.0 for credential authentical is that:
+  - Reasons why I used Jinja2:
+    1. It is a fast, expressive, extensible templating engine.
+    2. Easy to read and implement and eliminates a lot of redundant code.
 
-1. The login username and password are no longer hardcoded in plain text, which would have left them vulnerable to being compomised.
-2. OAuth 2.0 allows scope limits to be set that can restrict token access to **_only reading ticket data_** from the Zendesk API.
+### Display All Tickets
+  - Pagingation - 
+  Initially I considered to handle the pagination at the backend. But for the particular test case, I eventually decided to go with my current approach beacuse it had the following benefits:
+    
+  1. User do not need to make API calls everytime they jump to another page which resulted in increasing the traffic on the server side.    Reducing the numebr of API calls and providing all the ticket at once helped me reduce the response time.
+  2. Using the DataTable template for pagination made my code more readable.
 
-#### Display tickets in a list & Display individual ticket details
-
-I found that putting all of the string output methods and functionality into the Display class created a ridiculous amount of redundant code
-and made readability quite cumbersome. I opted to add toString methods for both summary and full detail outputs onto the Ticket class and relocated the majority of string output into a separate _message.js_ Object. Moving most of the generic string output to the _message.js_ Object helped to:
-
-1. Increase readbility of the Display.js class file.
-2. Make all text output follow a more concise naming convention e.g: `display.print(message.goodbye)`.
-
-#### Page through tickets when more than 25 are returned
-
-I had planned to have the TicketFetcher pull down the limit of 100 tickets per requests and display ten tickets per page. Then allow the user to page through until the tickets until they were complete, but I found that this method of logic was unintuitive and tedious as the calculations for something simple such as the current page number grew rather unwieldy. Also, retrieving the limit of tickets per request meant that you would be wasting bandwidth if the user decided to exit after the first page, so for those reasons I decided it would be best to allow the TicketFetch to pull only twenty-five tickets per request then display the entire twenty-five tickets in console, this meant that:
-
-1. Users were only needing to make network requests for the exact number of pages they wanted to viw.
-2. The code was cleaner and more readable due as the server handled most of the pagination processing.
+  However, if the number of tickets on the server grew exponentially large, then I might have considered handling the pagination on the backend because it might have helped to reduce the bandwidth.
 
 ## Learning Resources
 
