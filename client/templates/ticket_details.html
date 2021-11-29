@@ -16,7 +16,11 @@
                 <div class="card-header">Something went wrong</div>
                 <div class="card-body">
                     <h5 class="card-title">Error: </h5>
-                    <p class="card-text">{{error['error']}}</p>
+                    {% if error['error'] == 'RecordNotFound' %}
+                        <p class="card-text">Ticket not found on your account</p>
+                    {% else %}
+                        <p class="card-text">{{error['error']}}</p>
+                    {% endif %}
                 </div>
             </div>
         </div>

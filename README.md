@@ -18,11 +18,11 @@ A web based application that is written using the Flask framework. The app makes
 
 ![Single_Ticket](images/Single_Ticket.png)
 
-- Error Page: (If there is an error with the API request) 
+- Error Page: (If there is an authentication error with the API request) 
 
 ![Error_Page](images/Error_Page.png)
 
-- Ticket not found error: (If the ticket id is not present in the json response)
+- Ticket not found error: (If the ticket id is not present on the user's accout)
 
 ![Ticket_Error](images/Ticket_Not_Found.png)
 
@@ -52,6 +52,16 @@ $ source venv/bin/activate
 $ pip3 install -r requirements.txt
 $ python3 app.py
 ```
+
+### Unit Testing:
+
+  - Test 1: Should preprocess the all the tickets into correct structure for rendering.
+  - Test 2: Should preprocess a single ticket into correct structure for rendering.
+  - Test 3: Test 'get_all_ticket' function. Check the API response and json data for all tickets.
+  - Test 4: Test 'get_single_ticket' function. Check the API response and json data for all tickets.
+  - Test 5: Check the whether the process_all_ticket function works as expected when passed empty Json
+  - Test 6: Check the whether the process_single_ticket function works as expected when passed empty Json
+  - Test 7: Check if ticket does not exist, then the get_single_ticket function shows the error
 
 #### Run Tests
 
@@ -95,7 +105,7 @@ $ python3  test_tickets.py
 
 - Originally, I thought of using Node.js and React as my base frameworks to make API calls and frontend rendering. 
   But being more comfortable with python, I felt it would be easy for me to build the application.
-  
+
 - Node's scalability is easier to achieve due to its asynchronous structure, but Python works better for complex data-intensive projects.
 
 #### Connecting and requesting tickets from the zendesk API

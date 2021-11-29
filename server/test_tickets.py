@@ -88,7 +88,7 @@ class TestApp(unittest.TestCase):
         self.assertEqual(expected_ticket_result, result)
 
 
-#Test 6: Check if ticket does not exist, then the get_single_ticket function shows the error
+#Test 7: Check if ticket does not exist, then the get_single_ticket function shows the error
     def test_oneticket_api_error(self):
         mock_response = "RecordNotFound"
 
