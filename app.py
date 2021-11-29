@@ -4,7 +4,6 @@ from server.get_single_ticket import get_single_ticket
 
 app = Flask(__name__, template_folder="./client/templates")
 
-
 @app.route('/')
 def display_all_tickets():
     subjects,error,status_code, = get_all_tickets()

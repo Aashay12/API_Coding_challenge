@@ -27,3 +27,13 @@
 2021-11-28 17:16:25,477:server.get_all_tickets:Successfully logged 100 Tickets.
 2021-11-28 17:16:35,289:server.get_all_tickets:Successfully logged 100 Tickets.
 2021-11-28 17:18:38,117:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 17:39:26,117:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 17:39:31,726:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 17:39:55,252:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 17:40:26,020:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
+2021-11-28 17:41:10,914:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
+2021-11-28 17:41:25,967:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
+2021-11-28 17:41:57,865:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
+2021-11-28 17:42:08,181:server.get_all_tickets:Error: Couldn't authenticate you Status_code: 401
+2021-11-28 17:42:31,824:server.get_all_tickets:Successfully logged 100 Tickets.
+2021-11-28 17:42:41,870:server.get_all_tickets:Successfully logged 100 Tickets.

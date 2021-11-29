@@ -103,10 +103,13 @@ $ python3  test_tickets.py
 
 ### Design Choices
 
-- Originally, I thought of using Node.js and React as my base frameworks to make API calls and frontend rendering. 
-  But being more comfortable with python, I felt it would be easy for me to build the application in a short period of time.
+- I used python along with Flask to deign this web-app. Flask framework has no dependencies on external libraries. The framework offers extensions for open authentication systems and supports all latest technologies.
 
-- Node's scalability is easier to achieve due to its asynchronous structure, but Python works better for complex data-intensive projects.
+  #### Reasons why I used flask:
+
+  - High scalability for simple applications,
+  - Easy to build a quick prototype.
+  - Routing URL is easy.
 
 #### Connecting and requesting tickets from the zendesk API
 
@@ -116,7 +119,7 @@ $ python3  test_tickets.py
    - Used HTML, CSS and JavaScript to desgin a simple frontend view. Used Datatable template to dislay all the tickets in a table along with pagination.
 
 ### Data templating
-   - Used Jinja2 to retrieve the data from Flask framework. 
+   - Used Jinja2 to retrieve the data from Flask framework and render it. 
 
   - Reasons why I used Jinja2:
     1. It is a fast, expressive, extensible templating engine.
