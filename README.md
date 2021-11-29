@@ -103,7 +103,7 @@ $ python3  test_tickets.py
 
 ### Design Choices
 
-- I used python along with Flask to deign this web-app. Flask framework has no dependencies on external libraries. The framework offers extensions for open authentication systems and supports all latest technologies.
+- I used python along with Flask to design this web-app. Flask framework has no dependencies on external libraries. The framework offers extensions for open authentication systems and supports all latest technologies.
 
   #### Reasons why I used flask:
 
