@@ -1,4 +1,4 @@
-# Zendesk-Coding-Challenge - Aashay Motiwala
+# Coding-Challenge - Aashay Motiwala
 
 A web based application that is written using the Flask framework. The app makes an HTTP request to the Zendesk Ticket API, which returns a list of all tickets linked with the account. These tickets are then shown in a tabular style. Users can obtain information about all tickets or specific data about a particular ticket.
 
